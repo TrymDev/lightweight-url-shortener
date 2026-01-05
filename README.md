@@ -16,3 +16,16 @@ A simple URL shortener built in Python
 pip install -r requirements.txt
 py main.py
 ```
+
+## Usage
+This service is a minimal HTTP API.
+
+### Create a shortened URL
+`GET /add/<url>`
+
+Returns a shortened URL identifier.
+
+### Redirect
+`GET /<short_code>`
+
+Redirects to the original URL if it exists.
